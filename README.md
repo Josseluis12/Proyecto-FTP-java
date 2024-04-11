@@ -1,18 +1,19 @@
-## Guía de Uso: TareaFTP
+# Guía de Uso para TareaFTP
 
-### Descripción
-TareaFTP es una aplicación Java que te permite interactuar con un servidor FTP desde la línea de comandos. Con esta aplicación, puedes listar el contenido de un directorio, cambiar de directorio, descargar archivos y más.
+## Descripción
+TareaFTP es una aplicación Java diseñada para facilitar la interacción con servidores FTP desde la línea de comandos. Con esta herramienta, puedes explorar, descargar y administrar archivos en un servidor FTP de manera sencilla y eficiente.
 
-### Requisitos previos
-Antes de utilizar esta aplicación, asegúrate de tener instalado Java en tu sistema. También necesitarás tener acceso a un servidor FTP al que puedas conectarte.
+## Configuración Inicial
+Antes de comenzar a utilizar TareaFTP, asegúrate de realizar la siguiente configuración:
 
-### Configuración
-Antes de ejecutar la aplicación, asegúrate de editar el archivo `Main.java` y proporcionar la dirección del servidor FTP al que deseas conectarte. Además, asegúrate de tener las credenciales de acceso al servidor FTP.
+1. Abre el archivo `Main.java` en un editor de texto.
+2. Modifica la variable `SERVIDORURL` con la dirección del servidor FTP al que deseas conectarte.
+3. Asegúrate de tener las credenciales de acceso al servidor FTP disponibles para proporcionarlas durante la ejecución de la aplicación.
 
-### Uso
-Para ejecutar la aplicación, sigue estos pasos:
+## Uso del Proyecto
+Una vez que hayas configurado el archivo `Main.java`, sigue estos pasos para utilizar TareaFTP:
 
-1. Abre una terminal o línea de comandos.
+1. Abre una terminal o línea de comandos en tu sistema.
 2. Navega al directorio que contiene el archivo `Main.java`.
 3. Compila el archivo `Main.java` ejecutando el siguiente comando:
    ```
@@ -22,4 +23,17 @@ Para ejecutar la aplicación, sigue estos pasos:
    ```
    java Main
    ```
-5. Sigue las instrucciones en pantalla para interactuar con el servidor FTP. Puedes utilizar comandos como `ls` para listar el contenido del directorio actual, `cd` para cambiar de directorio, `get` para descargar archivos, y `exit` para salir de la aplicación.
+5. Aparecerá un menú con las opciones disponibles. Utiliza los siguientes comandos para interactuar con el servidor FTP:
+   - `ls`: Lista el contenido del directorio actual en el servidor FTP.
+   - `cd <ruta>`: Cambia al directorio especificado en el servidor FTP.
+   - `get <archivo>`: Descarga el archivo especificado desde el servidor FTP.
+   - `exit`: Cierra la aplicación y termina la conexión con el servidor FTP.
+
+## Ejemplo de Uso
+Aquí tienes un ejemplo de cómo utilizar TareaFTP:
+
+1. Después de ejecutar la aplicación, utiliza el comando `ls` para listar el contenido del directorio actual en el servidor FTP.
+2. Utiliza el comando `cd <ruta>` para cambiar al directorio deseado en el servidor FTP.
+3. Una vez en el directorio deseado, utiliza el comando `get <archivo>` para descargar un archivo específico desde el servidor FTP.
+4. Repite los pasos anteriores según sea necesario para explorar y administrar archivos en el servidor FTP.
+5. Cuando hayas terminado, utiliza el comando `exit` para cerrar la aplicación y terminar la conexión con el servidor FTP.
